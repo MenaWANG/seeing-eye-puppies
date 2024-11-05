@@ -1,5 +1,7 @@
 # Seeing Eye Dog Puppies We've Fostered
 
+Link to the website: https://menawang.github.io/seeing-eye-puppies/
+
 Welcome to our journey of fostering seeing eye dog puppies! This website documents our experiences raising these amazing future guide dogs.
 
 ## Current and Past Puppies
