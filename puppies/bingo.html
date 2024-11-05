@@ -3,32 +3,96 @@
 <head>
     <title>Bingo's Journey</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <div class="header">
-        <h1>🐾 Bingo's Page Under Construction 🐾</h1>
+        <h1>🐾 Bingo's Journey 🐾</h1>
         <p>2021-2023</p>
     </div>
 
-    <!-- Main photo -->
-    <img src="../images/Bingo.JPG" alt="Bingo" class="puppy-photo">
+    <!-- Main Profile Photo -->
+    <img src="../images/bingo3.jpg" alt="Bingo" class="puppy-photo">
 
-    <div class="section">
-        <h2>🚧 Paw-gress in Progress! 🚧</h2>
-        <p>Like a puppy learning to walk on a leash, this page is still finding its way...</p>
-        <p>Bingo is busy with:</p>
-        <ul>
-            <li>📸 Posing for his glamour shots</li>
-            <li>🎯 Practicing his best tricks</li>
-            <li>🦮 Learning to be a future guide dog</li>
-            <li>🛏️ Quality control testing all the comfy spots</li>
-        </ul>
-        <p>Fetch you later - we'll have more updates soon! 🐕</p>
+    <!-- Bio Section -->
+    <div class="bio-section">
+        <p>Bingo was our special boy who went on to become a breeding dog before serving as a guide dog. 
+           He has sired 27 puppies 🐶, many of whom are now in training to become guide dogs themselves 💖. 
+           His gentle nature and intelligence live on in his offspring 💝.</p>
+    </div>
+
+    <!-- Photo Slider -->
+    <div class="album-section">
+        <h2 class="album-title">Album of Bingo's Puppies</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/puppies.jpg" alt="puppies">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppies2.jpg" alt="puppies2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppies3.jpg" alt="puppies3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppies4.png" alt="puppies4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppy-biting-finger.jpg" alt="finger-biting-puppy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppy1.jpg" alt="puppy1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppy2.jpg" alt="puppy2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppy3.jpg" alt="puppy3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppy4.jpg" alt="puppy4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/puppy5.jpg" alt="puppy5">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
     <!-- Navigation -->
-    <div style="text-align: center;">
+    <div class="nav-container">
         <a href="../index.html" class="nav-button">Back to All Puppies</a>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: 'slide',
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
 </body>
 </html>
