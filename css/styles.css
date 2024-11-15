@@ -142,7 +142,7 @@ body {
 
 .bio-section p {
     margin: 0 auto;  /* Center the paragraph */
-    font-size: 1.1em;
+    /* font-size: 1.1em; */
     max-width: 800px;  /* Match the photo width */
 }
 
