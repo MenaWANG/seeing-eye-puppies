@@ -165,3 +165,59 @@ body {
 .nav-button:hover {
     background-color: #0056b3;
 }
+
+/* Story Section Styles */
+.stories-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.story-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.story-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story-text {
+    line-height: 1.6;
+    margin-bottom: 15px;  /* Add some space between text and images */
+}
+
+.story-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.story-img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments */
+/* @media (min-width: 768px) {
+    .story-content {
+        flex-direction: row;
+    }
+} */
