@@ -130,6 +130,7 @@ body {
 /* Bio Section */
 .bio-section {
     max-width: 800px;
+    font-size:medium;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
@@ -160,6 +161,7 @@ body {
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: large;
 }
 
 .nav-button:hover {
