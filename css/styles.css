@@ -1,4 +1,4 @@
-/* Common styles for all pages */
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,12 +6,92 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Layout Components */
 .header {
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Common image styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Common Components */
+
+/* Cards */
+.puppy-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.puppy-card:hover {
+    transform: translateY(-5px);
+}
+
+.puppy-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.puppy-card h2 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.puppy-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Story Cards */
+.story-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.story-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Links and Buttons */
+.read-more, .nav-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.read-more:hover, .nav-button:hover {
+    background-color: #0056b3;
+}
+
+.group-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Images */
 .puppy-photo {
     width: 100%;
     max-width: 800px;
@@ -21,7 +101,66 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Photo gallery grid */
+/* Content Sections */
+.bio-section {
+    max-width: 800px;
+    font-size: medium;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bio-section p {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.stories-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story-text {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.story-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.story-img:hover {
+    transform: scale(1.02);
+}
+
+/* Navigation */
+.nav-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+}
+
+/* Photo Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -41,31 +180,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Common section styles */
-.section {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Navigation buttons */
-.nav-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.nav-button:hover {
-    background-color: #0056b3;
-}
-
-/* Timeline or milestone list */
+/* Timeline */
 .timeline {
     margin: 20px 0;
     padding-left: 20px;
@@ -79,7 +194,7 @@ body {
     border-radius: 5px;
 }
 
-/* Photo Slider Styles */
+/* Photo Slider */
 .swiper {
     width: 100%;
     max-width: 800px;
@@ -92,7 +207,7 @@ body {
 .swiper-slide img {
     width: 100%;
     height: 600px;
-    object-fit: contain;  /* Changed from 'cover' to 'contain' to show full images */
+    object-fit: contain;
     border-radius: 8px;
     background-color: #f5f5f5;
 }
@@ -126,100 +241,3 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* Bio Section */
-.bio-section {
-    max-width: 800px;
-    font-size:medium;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-    line-height: 1.6;
-    color: #333;
-    /* Add these to match photo width and centering */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.bio-section p {
-    margin: 0 auto;  /* Center the paragraph */
-    /* font-size: 1.1em; */
-    max-width: 800px;  /* Match the photo width */
-}
-
-/* Navigation styles */
-.nav-container {
-    text-align: center;
-    margin: 30px auto;
-    width: 100%;
-}
-
-.nav-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: large;
-}
-
-.nav-button:hover {
-    background-color: #0056b3;
-}
-
-/* Story Section Styles */
-.stories-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.story-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.story-card h3 {
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.story-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.story-text {
-    line-height: 1.6;
-    margin-bottom: 15px;  /* Add some space between text and images */
-}
-
-.story-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-}
-
-.story-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.story-img:hover {
-    transform: scale(1.02);
-}
-
-/* Responsive adjustments */
-/* @media (min-width: 768px) {
-    .story-content {
-        flex-direction: row;
-    }
-} */
