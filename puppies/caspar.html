@@ -3,6 +3,7 @@
 <head>
     <title>Caspar's Journey</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <div class="header">
@@ -84,6 +85,57 @@
             </div>
         </div>
     </div>
+
+    <!-- Photo Slider -->
+    <div class="album-section">
+        <h2 class="album-title">Album of Casper's Puppies</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/casper-boy-pup1.jpg" alt="casper-boy-pup1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/casper-girl-pup3.jpg" alt="casper-girl-pup3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/casper-girl-pup4.jpg" alt="casper-girl-pup4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/casper-quaver-and-pups5.jpg" alt="casper-quaver-and-pups5">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: 'slide',
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
 
     <!-- Navigation -->
     <div style="text-align: center;">
