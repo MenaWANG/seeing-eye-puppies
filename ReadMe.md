@@ -1,18 +1,15 @@
 # Seeing Eye Dog Puppies We've Fostered
 
-Link to the website: https://menawang.github.io/seeing-eye-puppies/
-
 Welcome to our journey of fostering seeing eye dog puppies! This website documents our experiences raising these amazing future guide dogs.
+
+🦮 [Link to website](https://menawang.github.io/seeing-eye-puppies/)
 
 ## Current and Past Puppies
 
-### Micky (2019-2020)
-
-### Kanga (2020-2021) 
-
-### Micky (2021-2023)
-
-### Caspar(2023-2024)
+ - Micky (2019-2020)  
+ - Kanga (2020-2021)   
+ - Bingo (2021-2023)   
+ - Casper (2023-now)   
 
 ## About Fostering Seeing Eye Dogs
 Our journey with the puppies has brought me and my family tremendous joy! I must admit it was always bittersweet when we had to say goodbye to these puppies when they turned 1. But knowing they will play such an important role in another person's life and being loved ❤️ and relied on as a guide-dog 🦮, we know it is all worthwhile.
